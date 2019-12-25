@@ -1,0 +1,37 @@
+.app__login
+    display: flex
+    width: 100%
+    min-height: 100%
+    background-color: $main__purple
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    & .form__holder
+        display: block
+        width: 354px
+        height: 384px
+        border-radius: 15px
+        background-color: $main__white
+        .form__title--text
+            display: block
+            height: 45px
+            font-family: iranyekan
+            font-size: 1.125rem
+            text-align: center
+            margin-top: 20px
+        .form__login--inputs
+            display: block
+            height: 250px
+            width: 90%
+            margin: auto
+            border-bottom: 1px solid $gray__border
+        .form__register--link
+            display: block
+            font-size: 0.75rem
+            text-align: center
+            height: 45px
+            line-height: 45px
+            margin-top: 10px
+            vertical-align: middle
+            a
+                @include resetATag($main__magenta)

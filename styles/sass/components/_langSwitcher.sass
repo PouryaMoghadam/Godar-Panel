@@ -1,0 +1,27 @@
+.langSwitcher__holder
+    display: block
+    position: fixed
+    top: 20px
+    left: 20px
+    direction: ltr
+    color: $gray__border
+    z-index: 2
+    span
+        display: inline-block
+        cursor: pointer
+        margin-left: 10px
+        margin-right: 10px
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        text-align: center
+        line-height: 30px
+        vertical-align: middle
+        z-index: 5
+    .langSwitcher__button--active
+        pointer-events: none
+        z-index: 1
+        position: absolute
+        background-color: $purple__border
+        transition-duration: 300ms
+        transition-timing-function: cubic-bezier(.25,.1,.25,1)
